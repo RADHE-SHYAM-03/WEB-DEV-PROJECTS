@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Russo One", sans-serif;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right top, #000001, #0f0f11, #18191b, #212125, #292a2f, #292a2f, #292a2f, #292a2f, #212125, #18191b, #0f0f11, #000001);
+}
+@media(max-width:493px){
+    body{
+        display: none;
+    }
+}
+#previous_page{
+    padding: 10px;
+}
+#previous_page:hover{
+    filter:drop-shadow(0px 4px 8px rgba(180,196,252,0.69));
+}
+/* Typewriter effect using css */
+.typewriter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 120px;
+}
+#typewriter-content{
+    color: whitesmoke;
+    font-size: 900;
+    font-size:4.15rem;
+    position: relative;
+    padding: 12px;
+    border-right: 10px solid whitesmoke;
+    text-shadow: 3px 4px 3px rgba(180,196,252,0.69);
+}
+#textbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:20px auto;
+    height: 500px;
+    width: 70%;
+    border-radius:22px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(10px);
+}
+#textbox:focus{
+    border-color: rgba(180,196,252,1);
+    box-shadow: 0 4px 8px rgba(180,196,252,1);
+}
+#textbox::placeholder{
+    font-size:1.0rem;
+    color:black;
+}
+#textbox::-webkit-scrollbar{
+    background-color: transparent;
+}
+.textbox-controls{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin: auto;
+    width:60%;
+    height: fit-content;
+}
+#play-button,#close-button{
+    cursor: pointer;
+    height:45px;
+    width: 200px;
+    padding:auto;
+    border-radius: 10px;
+    color: #999999;
+    border: 1px solid black;
+    margin: auto;
+    letter-spacing: 8px;
+    background-color: #000000;
+}
+#play-button:hover,#close-button:hover{
+          box-shadow:0px 4px 8px rgba(180,196,252,0.69);
+          color:rgba(180,196,252,0.69);
+}
+hr{
+    width: 80%;
+    color: whitesmoke;
+    margin:35px auto auto auto;
+}
+#footer-content{
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+#footer-section-emoji{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    filter:drop-shadow(0px 4px 8px #f27d0c);
+}
+@media(max-width:825px){
+    body{
+        height: 100vh;
+    }
+    #textbox{
+        height:310px;
+        width: 80%;
+    }
+    #typewriter-content{
+        font-size: 2.2rem;
+    }
+    #play-button,#close-button{
+        height:40px;
+        width: 180x;
+        margin: 18px;
+        letter-spacing:3px;
+        padding: 10px;
+        font-size: 13px;
+    }
+}
